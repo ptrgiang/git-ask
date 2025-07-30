@@ -10,6 +10,28 @@ This tool provides a graphical user interface (GUI) where you can describe a tas
 - **Instant Command Generation:** Get the Git commands you need in seconds.
 - **Cross-Platform:** Built with Python and Tkinter, it runs on Windows, macOS, and Linux.
 
+## API Usage
+
+This application uses a third-party API from [gitfluence.com](https://www.gitfluence.com/) to process natural language prompts and generate Git commands. You can also use this API directly.
+
+**Endpoint:** `https://www.gitfluence.com/api/generate`
+
+**Method:** `POST`
+
+**Body:**
+```json
+{
+    "prompt": "your natural language query"
+}
+```
+
+**Example with cURL:**
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"prompt":"delete the last commit"}' https://www.gitfluence.com/api/generate
+```
+
+**Disclaimer:** This is a third-party API. Its availability and functionality are not guaranteed by this project.
+
 ## How to Run
 
 1.  **Prerequisites:** Ensure you have Python 3 installed.
