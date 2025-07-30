@@ -27,7 +27,7 @@ This application uses a third-party API from [gitfluence.com](https://www.gitflu
 
 **Example with cURL:**
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{"prompt":"delete the last commit"}' https://www.gitfluence.com/api/generate
+curl -X POST -H "Content-Type: application/json" -d '{"prompt":"create a new branch called 'feature'"}' https://www.gitfluence.com/api/generate
 ```
 
 **Disclaimer:** This is a third-party API. Its availability and functionality are not guaranteed by this project.
